@@ -16,7 +16,15 @@ The fields configured in the visual node are connected to matching tags in its c
 
 This is like writing the code visually. You keep the freedom to create your own logic and customize how it works, while other users can configure it without learning different programming frameworks or writing long sections of code.
 
-1. **customlogic** — 
+```mermaid
+flowchart LR
+  s0["Define variants"]
+  s1["Configure lines and fields"]
+  s2["Expose inputs and outputs"]
+  s3["Implement tagged source"]
+  s4["Test and publish"]
+  s0 --> s1 --> s2 --> s3 --> s4
+```
 
 ## Design a Logic Node
 
@@ -26,7 +34,15 @@ Start with one clear task. Add only the choices users need, then connect those c
 
 Follow the arrows from top to bottom. Each bold title is the level you are working with, and the numbered sentence explains the decision that produces the next level. The right side uses Query Database as an example to make each level of the process easier to understand.
 
-1. **customlogic-build** — 
+```mermaid
+flowchart LR
+  s0["Node identity"]
+  s1["Variants"]
+  s2["Configuration lines"]
+  s3["Fields"]
+  s4["Tagged source"]
+  s0 --> s1 --> s2 --> s3 --> s4
+```
 
 **0. Choose the functionality.** Start with the job you want to reuse. For example, if different projects need to work with database data, do not design the node around one table or one request. Create a **Query Database** node that can work with whichever model the user selects.
 
@@ -57,7 +73,14 @@ In the Node Builder, create and adjust these canvas-facing parts in [Element Pac
 
 The schema below shows how each level of the configuration affects the elements exposed by the node.
 
-1. **customlogic-elements** — 
+```mermaid
+flowchart LR
+  s0["Element pack"]
+  s1["Inputs and outputs"]
+  s2["Logic flow exits and errors"]
+  s3["Conditions and overrides"]
+  s0 --> s1 --> s2 --> s3
+```
 
 **How to read the figure:**
 
@@ -72,7 +95,14 @@ Before defining custom behavior, it helps to understand an **instance**. An inst
 
 In the Node Builder, create these alternatives in [Instances](./visual-node-builder.md#instances). Use a line instance for an alternate row configuration, or an element-pack instance for alternate inputs, outputs, logic flows, and errors.
 
-1. **customlogic-instances** — 
+```mermaid
+flowchart LR
+  s0["Base line or element pack"]
+  s1["Named instance"]
+  s2["Instance overrides"]
+  s3["Configured node"]
+  s0 --> s1 --> s2 --> s3
+```
 
 In the previous schema, the **Expected** condition creates a new **Element Pack A**. You can instead create an instance of the **Base Elements** for that condition and modify only the elements it needs. The same approach works for config lines and their instances.
 
@@ -91,7 +121,14 @@ Together, these two parts define **when** and **how** elements are added. Custom
 
 ## Logic Node Summary
 
-1. **customlogic-summary** — 
+```mermaid
+flowchart LR
+  s0["Node structure"]
+  s1["Configured variant"]
+  s2["Tagged implementation"]
+  s3["Reusable action"]
+  s0 --> s1 --> s2 --> s3
+```
 
 A logic node turns one functionality into a reusable visual action. The main ideas to remember are:
 

@@ -33,13 +33,13 @@ PNG and static, self-contained SVG imports become portable PNG files under `asse
 Connect with [browser sign-in](./cli-login-logout.md) before generation:
 
 ```bash
-avora login --api https://your-avora-api.example.com
+avora login
 avora node generate ./my-node --case tests/cases/example.avora-test.json --json
 avora node prepare ./my-node --case tests/cases/example.avora-test.json --python 3.11 --json
 avora node test ./my-node --case tests/cases/example.avora-test.json --json
 ```
 
-Replace the example API URL with your environment's backend. Generation uses the authenticated Avora compiler. Prepare downloads managed Python tooling and installs locked PyPI wheel dependencies when needed. Test runs a disposable local FastAPI process. Matching generated applications and environments are reused.
+The default API is `https://mcp.avora.dev/api/v1`. For development, pass `avora login --api http://localhost:8000/api/v1`. Generation uses the authenticated Avora compiler. Prepare downloads managed Python tooling and installs locked PyPI wheel dependencies when needed. Test runs a disposable local FastAPI process. Matching generated applications and environments are reused.
 
 Cases store configured values separately from JSON runtime `inputs`. Use `expect.output` for the exact response body or `expect.error` for an intended HTTP error. A case without an expectation remains **Not tested**; edited source or case inputs make previous reports **Outdated**. First execution supports pure FastAPI nodes with empty or enum-only scratch context.
 

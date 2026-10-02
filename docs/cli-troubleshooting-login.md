@@ -4,7 +4,7 @@ Most connection problems come from the API URL, browser approval, selected works
 
 ## Check the backend
 
-The CLI defaults to `http://localhost:8000`. Use `avora login --api <your-backend-url>` for another environment. Browser sessions are bound to that server; sign in again when changing servers. Review [API & State](./cli-api-state.md) for URL precedence.
+The CLI defaults to `https://mcp.avora.dev/api/v1`. Use `avora login --api <your-backend-url>` for another environment. Browser sessions are bound to that server; sign in again when changing servers. Review [API & State](./cli-api-state.md) for URL precedence.
 
 ## Finish browser approval
 

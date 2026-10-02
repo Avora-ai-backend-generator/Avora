@@ -34,6 +34,10 @@ Open **Extensions** from the Activity Bar or press `Ctrl/Cmd+Shift+X`. Search fo
 
 When no account is connected, each view shows a **Login to Start** action instead of account data.
 
+## Install the Current VSIX
+
+Download `avora-dev-0.0.22.vsix` from **Avora → Settings → Connectors**. Run **Extensions: Install from VSIX…** in VS Code and select the archive. Reload when prompted, then run **Avora: Login**. This route provides the packaged build when registry versions lag.
+
 ## Expected Result
 
 The Avora icon appears in the Activity Bar, the Avora logo appears in the status bar, and the two sidebar views are ready for sign-in.

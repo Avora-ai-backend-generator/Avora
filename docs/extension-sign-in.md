@@ -4,7 +4,7 @@ Connect the extension through Avora's browser authorization page. Your account p
 
 ## Start the connection
 
-Use **Login to Start** in the Avora sidebar, **Avora: Login** in the Command Palette, or **Avora: Account Actions → Connect**. Configure the backend URL first when using a hosted environment; the extension defaults to a local backend.
+Use **Login to Start** in the Avora sidebar, **Avora: Login** in the Command Palette, or **Avora: Account Actions → Connect**. The extension defaults to `https://mcp.avora.dev/api/v1`. Configure the backend URL first when using a development environment.
 
 ## Steps
 

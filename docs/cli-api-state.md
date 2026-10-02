@@ -18,7 +18,7 @@ The API URL is resolved in this order:
 1. The command's `--api <url>` option.
 2. The `AVORA_API_URL` environment variable.
 3. The API URL saved during the last login.
-4. `http://localhost:8000`.
+4. `https://mcp.avora.dev/api/v1`.
 
 State is stored in the first writable location in this order:
 

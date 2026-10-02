@@ -22,7 +22,7 @@ You can use the CLI to:
 
 Install Node.js 22 or later with npm. Workspace pulls also require an Avora account and access to the Avora API. Depending on the project you run, you may also need Git, Python 3, or the `unzip` command.
 
-The current CLI is installed from the local `avora-cli` package. It is not documented here as a public npm package.
+Download the CLI archive from **Avora → Settings → Connectors**, or link the local `avora-cli` package in a development checkout. See [installation](./cli-install-run.md); the release archive bundles its SDK dependency.
 
 ## Recommended Order
 
@@ -34,7 +34,7 @@ The current CLI is installed from the local `avora-cli` package. It is not docum
 
 ## Pages in This Group
 
-- [Install the CLI](./cli-install-run.md) — Link the local package and confirm that the avora command is available.
+- [Install the CLI](./cli-install-run.md) — Install the release archive or link a development checkout.
 - [Interactive Menu](./cli-help-menu.md) — Use the guided command palette and learn its keyboard controls.
 - [Sign In](./cli-login-logout.md) — Authenticate safely and understand what logout clears.
 - [API & State](./cli-api-state.md) — Choose an API endpoint and control where CLI state is stored.

@@ -12,6 +12,8 @@ Install Avora from the [Visual Studio Marketplace](https://marketplace.visualstu
 
 VS Code-compatible editors such as Cursor or Antigravity can use different extension registries depending on the editor version. Search for **Avora** in that editor's Extensions view first, then use the supported Marketplace or Open VSX listing.
 
+For the latest packaged build, **Avora → Settings → Connectors** offers `avora-dev-0.0.22.vsix`. In VS Code, run **Extensions: Install from VSIX…**, select the file, then run **Avora: Login**.
+
 ## What This Section Covers
 
 The Extension documentation covers installation, account access, project pull and update workflows, local node authoring, private draft sync, published logic node testing, local folder behavior, settings, and recovery.
@@ -28,7 +30,7 @@ You can use the extension to:
 
 ## Before You Continue
 
-Install Visual Studio Code 1.90 or later and make sure you can sign in to an Avora account. The extension defaults to a locally running Avora backend and frontend; configure different URLs first if your Avora environment is hosted elsewhere.
+Install Visual Studio Code 1.90 or later and make sure you can sign in to an Avora account. The extension defaults to Avora's live API at `https://mcp.avora.dev/api/v1` and web app at `https://app.avora.dev`. Configure different URLs when using a development environment.
 
 Running generated code may also require Python, Node.js, and the dependencies declared by that project.
 

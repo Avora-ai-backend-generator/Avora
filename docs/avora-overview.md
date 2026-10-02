@@ -53,6 +53,12 @@ From SaaS platforms and marketplaces to internal tools, customer portals, and mo
 
 Move from an initial idea to a production backend through one clear, visual workflow. Review and refine the result at every stage.
 
-1. **avora** — 
+```mermaid
+flowchart LR
+  s0["Plan your backend"]
+  s1["Build models, requests, and logic"]
+  s2["Generate code and run a preview"]
+  s0 --> s1 --> s2
+```
 
 Next, read [Before You Start](./before-you-start.md) to learn the interface and canvas vocabulary used throughout the documentation.

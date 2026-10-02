@@ -88,7 +88,7 @@ async function runCase(folder, getAccessToken) {
 }
 ```
 
-Generation uses Avora's existing compiler API and requires a valid session. Prepare downloads managed Python tooling on first use and installs supported PyPI wheel dependencies. Testing runs a disposable local FastAPI application and compares its response with the case's expectations. These actions reuse matching generation and dependency state.
+Generation defaults to `https://mcp.avora.dev/api/v1` and requires a valid session. Pass `apiUrl` to `generateNode` for another environment and use a session approved for that backend. Prepare downloads managed Python tooling on first use and installs supported PyPI wheel dependencies. Testing runs a disposable local FastAPI application and compares its response with the case's expectations. These actions reuse matching generation and dependency state.
 
 The first local execution adapter supports pure FastAPI nodes with empty or enum-only context. Generation can accept scratch entity schemas, but that does not add database fixture execution. Cases without expectations remain **Not tested**, and changed source or inputs make previous reports **Outdated**. Generated code runs with your local user permissions.
 

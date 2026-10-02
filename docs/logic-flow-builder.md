@@ -35,7 +35,14 @@ An action node performs one focused operation. Built-in nodes include **Query**,
 
 Drag a node into the active logic flow, then work from top to bottom: choose its behavior, connect or create inputs, complete its configuration, inspect branch flows, and route its outputs and errors. For custom nodes, those visible parts come from the node's [variants, config lines, fields, and element packs](./logic-node-structure.md#design-a-logic-node).
 
-1. **logicflow** — 
+```mermaid
+flowchart LR
+  s0["Request inputs"]
+  s1["Configured actions"]
+  s2["Conditions and error paths"]
+  s3["Response outputs"]
+  s0 --> s1 --> s2 --> s3
+```
 
 > **Nested logic flows are not supported yet.** A logic flow inside a Logic Node is intended to group multiple logic nodes that use the parent node's inputs and outputs. These branch handles are defined in the custom node's [element pack](./logic-node-structure.md#elements-pack), keeping the outer logic flow simpler and easier to read.
 

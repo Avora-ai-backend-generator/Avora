@@ -31,7 +31,7 @@ npm pack
 
 Install the resulting archive in your own project or download a versioned archive from [GitHub Releases](https://github.com/Avora-ai-backend-generator/Avora/releases). Source publishing and GitHub releases do not imply an npm registry release.
 
-The VS Code extension is available from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Avora.avora-dev) and [Open VSX](https://open-vsx.org/extension/avora/avora-dev). The current CLI is distributed from a development checkout. The documentation describes the implemented versions; check your installed extension version when looking for newer commands.
+The VS Code extension is available from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Avora.avora-dev) and [Open VSX](https://open-vsx.org/extension/avora/avora-dev). Download CLI and VS Code archives from **Avora → Settings → Connectors**; the CLI can also be linked from a development checkout. The documentation describes the implemented versions; check your installed extension version when looking for newer commands.
 
 ## Platform guides
 

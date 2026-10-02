@@ -2,7 +2,14 @@
 
 Backend Fundamentals is the decision guide behind the Avora workflow. Use it when you need to choose the right entity shape, relationship type, request contract, auth rule, logic-flow path, or generated-backend review point.
 
-1. **backend-fundamentals** — 
+```mermaid
+flowchart LR
+  s0["Data model"]
+  s1["API contract"]
+  s2["Logic flow"]
+  s3["Runtime"]
+  s0 --> s1 --> s2 --> s3
+```
 
 > **Keep this tab focused.** Use these pages to make backend modeling decisions. Use the Platform docs for the exact click path inside Avora.
 

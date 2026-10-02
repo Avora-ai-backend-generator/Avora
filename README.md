@@ -40,7 +40,7 @@ Install the resulting archive with `npm install /absolute/path/to/avora-node-sdk
 | VS Code extension | Backend projects, editable local nodes, draft sync, mapped diagnostics, and tests | [Extension](docs/extension.md) · [Node authoring](docs/developer-tools/extension-node-authoring.md) |
 | Avora MCP | 22 tools for selected projects, private drafts, source, issues, previews, and reviewed changes | [Connection](docs/developer-tools/mcp.md) · [Tool reference](docs/developer-tools/mcp-tools.md) |
 
-Install the extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Avora.avora-dev) or [Open VSX](https://open-vsx.org/extension/avora/avora-dev). The CLI currently uses a development checkout. Guides describe the current implementation; an installed extension can lag until its next release.
+Install the extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Avora.avora-dev) or [Open VSX](https://open-vsx.org/extension/avora/avora-dev). Download the current CLI and VS Code archives from **Avora → Settings → Connectors**. The CLI also supports linking a development checkout. Guides describe the current implementation; an installed extension can lag until its next release.
 
 ## MCP availability
 

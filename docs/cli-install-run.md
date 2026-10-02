@@ -1,63 +1,45 @@
 # Install the CLI
 
-Link the local CLI package so the `avora` command is available from any terminal on your machine.
+Install Node.js 22 or later, then download the CLI archive from **Avora → Settings → Connectors**.
 
-## Task
+## Install a release archive
 
-Install the current repository version of Avora CLI and confirm that its help output opens correctly.
-
-## Prerequisites
-
-- Node.js 22 or later and npm are installed.
-- You have a local copy of the Avora repository.
-- Your terminal can write to npm's global link location.
-
-## Find This in Your Terminal
-
-Open a terminal and move into the repository's `avora-cli` folder.
+The current download is `avora-cli-0.9.1.tgz`. From the folder containing it:
 
 ```bash
-cd /path/to/Avora-app/avora-cli
+npm install -g ./avora-cli-0.9.1.tgz
+avora --help
+avora login
 ```
 
-## Steps
+You can also install the archive directly from your Avora environment's download URL. For the hosted app:
 
-1. Build the adjacent SDK, then install the CLI dependencies.
+```bash
+npm install -g https://app.avora.dev/downloads/avora-cli-0.9.1.tgz
+```
 
-   ```bash
-   npm --prefix ../avora-sdk ci
-   npm --prefix ../avora-sdk run build
-   npm ci
-   ```
+The default API is `https://mcp.avora.dev/api/v1`. Browser sign-in lets you approve permissions and select workspaces. Use `--api` for another environment. The CLI archive bundles its SDK dependency; an npm registry release is separate.
 
-2. Create the global development link.
+## From a development checkout
 
-   ```bash
-   npm link
-   ```
+Build the adjacent SDK before linking the local CLI:
 
-3. Confirm that the command is available.
+```bash
+cd /path/to/Avora-app/avora-sdk
+npm ci
+npm run build
+cd ../avora-cli
+npm ci
+npm link
+avora --help
+```
 
-   ```bash
-   avora --help
-   ```
+This development checkout includes `avora-cli/` and `avora-sdk/`. The public SDK repository distributes the standalone SDK and documentation.
 
-4. Open the interactive menu from a terminal that supports keyboard input.
+## Use the menu or commands
 
-   ```bash
-   avora
-   ```
+Run `avora` to open the interactive menu, or `avora --help` for commands. A non-interactive terminal prints help instead of opening the menu.
 
-## Expected Result
+If `avora` is unavailable after installation, check npm's global binary directory on `PATH`. Use a user-owned npm prefix when the global location is not writable.
 
-`avora --help` prints the command list, options, and examples. Running `avora` in an interactive terminal opens the Avora command palette.
-
-## Next Step
-
-Continue with [Interactive Menu](./cli-help-menu.md), then [Sign In](./cli-login-logout.md).
-
-## Troubleshooting
-
-- If `avora` is not found, run `npm link` again from the `avora-cli` folder and make sure npm's global binary directory is on your `PATH`.
-- If npm reports a permissions error, use a user-owned npm prefix rather than running the command with elevated privileges.
-- If the menu does not open, run `avora --help`. Non-interactive terminals intentionally show help instead of the menu.
+Continue with [Interactive Menu](./cli-help-menu.md), [Sign In](./cli-login-logout.md), or [Node Authoring](./cli-node-authoring.md).

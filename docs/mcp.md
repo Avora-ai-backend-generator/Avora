@@ -18,13 +18,13 @@ Your plan and the permissions you grant are separate requirements. Sharing a pro
 
 ## Connect your AI client
 
-Add a **Streamable HTTP** MCP server to your client's integration settings. Use the endpoint supplied by your Avora environment. For an environment hosted at the standard MCP domain, the endpoint is:
+Add a **Streamable HTTP** MCP server to your client's integration settings using:
 
 ```text
 https://mcp.avora.dev/mcp
 ```
 
-The server must be enabled and deployed by that environment's administrator. If the endpoint is unavailable, ask for its current URL or use a development environment with MCP enabled.
+You can also copy this URL from **Avora → Settings → Connectors**, where CLI and VS Code downloads are available.
 
 Clients with remote HTTP MCP and browser authorization support can sign in through Avora. Client support and integration menus vary by version. In a client that provides an MCP server URL field, paste the endpoint and start authentication.
 

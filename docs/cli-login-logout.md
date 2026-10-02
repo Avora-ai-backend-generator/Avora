@@ -10,7 +10,7 @@ Connect the CLI through Avora's browser authorization page. Sign in there, appro
 4. Return to the terminal and wait for the connected-account confirmation.
 5. Run `avora projects` to inspect the selected workspaces.
 
-The default backend is `http://localhost:8000`. Use your hosted environment's real backend URL instead of the example above when working remotely.
+The default API is `https://mcp.avora.dev/api/v1`. Use your hosted environment's real backend URL instead of the example above when working remotely.
 
 ## Open the link manually
 
