@@ -1,0 +1,101 @@
+// Pinned official PyPI wheel hashes. Regenerate deliberately when updating uv.
+export const UV_VERSION = "0.12.21";
+export const UV_WHEELS: Record<
+  string,
+  { url: string; sha256: string; size: number }
+> = {
+  "uv-0.12.21-py3-none-linux_armv6l.whl": {
+    url: "https://files.pythonhosted.org/packages/d1/a0/ac841d6a628b7b5d5108cd797f6200f317259d2d02b6b83918d3cc183112/uv-0.12.21-py3-none-linux_armv6l.whl",
+    sha256: "d5ce9a01d7123760c8da049a5e1cfb6d341357c09baf06181f618ee4948e9242",
+    size: 22672670,
+  },
+  "uv-0.12.21-py3-none-macosx_10_12_x86_64.whl": {
+    url: "https://files.pythonhosted.org/packages/51/f0/8673a5aeb771f99aadd269aa069874b10b8ed43fcb3a08a88d3770c27ad9/uv-0.12.21-py3-none-macosx_10_12_x86_64.whl",
+    sha256: "9c6fab087f35c8f8c0c79ad4c8a94f6804b983369c2887250fb753a70d8080fd",
+    size: 20942550,
+  },
+  "uv-0.12.21-py3-none-macosx_11_0_arm64.whl": {
+    url: "https://files.pythonhosted.org/packages/66/72/389b430ec12bd15547d4d3641622479cbf7a5c94af0ffb14fee2ed58f891/uv-0.12.21-py3-none-macosx_11_0_arm64.whl",
+    sha256: "eb4f75e8ed770e1f142e03a134b9507e7f4710c4b2cec385d4bf8c5810a91094",
+    size: 17124497,
+  },
+  "uv-0.12.21-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl":
+    {
+      url: "https://files.pythonhosted.org/packages/0e/05/6c536d9cf7977d3c55b8835a90d1e9e58def00309bec0e2ad062157d4499/uv-0.12.21-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl",
+      sha256:
+        "b7db8b4913e6cd34e6aabbe08ff82fbac7c1edae57747ea23118ca460f060d44",
+      size: 22122033,
+    },
+  "uv-0.12.21-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.musllinux_1_1_armv7l.whl":
+    {
+      url: "https://files.pythonhosted.org/packages/09/93/5662923c9dbe1d4faf11983e226c247f1f651059afb1a227d2571940a183/uv-0.12.21-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.musllinux_1_1_armv7l.whl",
+      sha256:
+        "7a0f0f21ce252dc1bf3b2b3634b76b2fa0e3014a6b4bc5d908af408bb83d61e3",
+      size: 22155782,
+    },
+  "uv-0.12.21-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.whl": {
+    url: "https://files.pythonhosted.org/packages/fd/61/370eb13eb6a4578abd4f27d0013647aaee137c6a21e7bdf54ce1e610a138/uv-0.12.21-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.whl",
+    sha256: "14f21c497a85bb19b3158f36a966d8619246548651d82a72fca599fdab0752d0",
+    size: 22211042,
+  },
+  "uv-0.12.21-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl": {
+    url: "https://files.pythonhosted.org/packages/40/8e/b69ff0ca272c049a12926a3cc61b520e7e0441039341087b8f4f737e015e/uv-0.12.21-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl",
+    sha256: "618f422e4544049c589f1e61110293da1f26949fbb266a4c2f22a03880d441a9",
+    size: 22888639,
+  },
+  "uv-0.12.21-py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl": {
+    url: "https://files.pythonhosted.org/packages/fc/f9/5bbca3d1916562669311ffd2e203637291a972bfc92e0dee5cfc0df2856b/uv-0.12.21-py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl",
+    sha256: "5a90f4bb6da0880b7fbe770d9d598d6cf0a6672da28c921ce397383b1134e37a",
+    size: 24232948,
+  },
+  "uv-0.12.21-py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl": {
+    url: "https://files.pythonhosted.org/packages/e7/2b/4b9fb1c2bd3358298fa8342fbb90feeaf88a7a102debfc559f4d9054fad1/uv-0.12.21-py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl",
+    sha256: "d6988f1025a776cf75d9ad2eb2b9bd26cde38cc1a86dab0787433d7185306bba",
+    size: 23916436,
+  },
+  "uv-0.12.21-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+    url: "https://files.pythonhosted.org/packages/c6/2b/8700206efe193fc279fe32c11ab9a502c8364e7882e3f6f36a00a6cc8af7/uv-0.12.21-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    sha256: "0083454d25479f1cd03547c8c98c235b4af92bd07f0e61c3eae5d1cbb0c1834c",
+    size: 20438857,
+  },
+  "uv-0.12.21-py3-none-manylinux_2_28_aarch64.whl": {
+    url: "https://files.pythonhosted.org/packages/c2/5a/09c78f5864c33958cd6d2682f71cd03d44265669a5c3cd426abecc369000/uv-0.12.21-py3-none-manylinux_2_28_aarch64.whl",
+    sha256: "fcd28fd87972f677f0e12d577842deb5d445adf36bcd4cd1ebaaec4c67788d7f",
+    size: 19809618,
+  },
+  "uv-0.12.21-py3-none-manylinux_2_31_riscv64.musllinux_1_1_riscv64.whl": {
+    url: "https://files.pythonhosted.org/packages/3f/66/4b9cbfb6d6e8acc9617681fb4c540c531d420637aee6e49810fc758e4e89/uv-0.12.21-py3-none-manylinux_2_31_riscv64.musllinux_1_1_riscv64.whl",
+    sha256: "8e1e2c602e9402b1d739c7278a5008b15a42349b26732c1f919f0d7cc751dda1",
+    size: 23004634,
+  },
+  "uv-0.12.21-py3-none-manylinux_2_31_riscv64.whl": {
+    url: "https://files.pythonhosted.org/packages/d9/78/084b6fe10aa8041da99f40b7e41d71224a69934ad87132b2f123cac915bf/uv-0.12.21-py3-none-manylinux_2_31_riscv64.whl",
+    sha256: "6bda0425c9e9dab543d43afd329ed0983d31ff687a49ca76508d708b4f35e1ef",
+    size: 23126185,
+  },
+  "uv-0.12.21-py3-none-musllinux_1_1_i686.whl": {
+    url: "https://files.pythonhosted.org/packages/66/ff/089aec72d4eabad95bc2613994b527be3a6048138d41a5272486888a596a/uv-0.12.21-py3-none-musllinux_1_1_i686.whl",
+    sha256: "8c321dc01220ce5c8dcc938b145762945ecccfb26068aad8163d18a544cc03e4",
+    size: 22033476,
+  },
+  "uv-0.12.21-py3-none-musllinux_1_1_x86_64.whl": {
+    url: "https://files.pythonhosted.org/packages/e9/1b/d359f667826d67bf1acd2a80ce4e2fe0bb661e796c296a8b7ff6c386db9f/uv-0.12.21-py3-none-musllinux_1_1_x86_64.whl",
+    sha256: "26aaa1dce3ae90502b2d7aa15577587aa185e5ba13480afd03df6c95dc2bb55b",
+    size: 23403470,
+  },
+  "uv-0.12.21-py3-none-win32.whl": {
+    url: "https://files.pythonhosted.org/packages/2c/c9/d80c0baa16ccb4bcf03b97032bf4f9a8bec5e4f8e4770800563892fc9fa2/uv-0.12.21-py3-none-win32.whl",
+    sha256: "448df56d46151b69c7ae210f24827eddea74c2dba2e37cc069db4385d3e458f6",
+    size: 20054450,
+  },
+  "uv-0.12.21-py3-none-win_amd64.whl": {
+    url: "https://files.pythonhosted.org/packages/2a/06/bda383b338dd21bcd74c9b4ba47301315573fdb5aba46fe40835f8299482/uv-0.12.21-py3-none-win_amd64.whl",
+    sha256: "8c7c3eb32d84c711906dedd09df7379cf4d9f5bb84b8e58a1244ca0a8a1209d4",
+    size: 18087242,
+  },
+  "uv-0.12.21-py3-none-win_arm64.whl": {
+    url: "https://files.pythonhosted.org/packages/2c/76/1b6478ff9dcc3b58b2025828e00f06bac4915b7442c8254d5b6265707561/uv-0.12.21-py3-none-win_arm64.whl",
+    sha256: "79dc0c11e7f169f1b32cf6838b6a0d651ba054cc8013e0b2e5fe34392c1d1528",
+    size: 19369672,
+  },
+};

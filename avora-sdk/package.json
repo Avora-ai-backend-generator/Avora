@@ -1,0 +1,49 @@
+{
+  "name": "@avora/node-sdk",
+  "version": "0.12.1",
+  "description": "Portable Avora node authoring, template validation and source mapping tools.",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "types",
+    "src/structure*.ts",
+    "README.md",
+    "src/appearance.ts",
+    "src/logoImport.ts"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test tests/*.test.cjs",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "@types/proper-lockfile": "^4.1.4",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@resvg/resvg-wasm": "^2.6.2",
+    "@xmldom/xmldom": "^0.9.12",
+    "ajv": "^8.20.0",
+    "dotenv": "^16.6.1",
+    "fast-png": "^6.2.0",
+    "fflate": "^0.8.3",
+    "jsonc-parser": "^3.3.1",
+    "proper-lockfile": "^4.1.2"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Avora-ai-backend-generator/Avora.git",
+    "directory": "avora-sdk"
+  },
+  "homepage": "https://docs.avora.dev/sdk",
+  "bugs": {
+    "url": "https://github.com/Avora-ai-backend-generator/Avora/issues"
+  },
+  "keywords": ["avora", "custom-nodes", "sdk", "templates", "node-authoring"]
+}

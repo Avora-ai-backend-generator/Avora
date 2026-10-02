@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.tgz
+.env
+.env.*
+.avora/
+/custom-nodes/
+.DS_Store
